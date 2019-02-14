@@ -1,0 +1,245 @@
+@import '../vendor/smart-grid/smart-grid.sass'
+@import 'fonts'
+@import 'variables'
+
++reset()
+
+body
+  font-family: Ubuntu, sans-serif
+  background: #EDEFF1
+
+.container
+  +wrapper
+
+header
+  display: flex
+  justify-content: space-between
+  align-items: baseline
+  padding: 49px 0 49px
+
+.logo
+  p
+    font-weight: 800
+    font-size: 36px
+    color: #31353e
+
+  span
+    font-size: 16px
+    color: #dd4b2b
+
+.nav
+  ul
+    display: flex
+
+  a
+    display: block
+    color: #31353e
+    padding: 17px 20px
+    transition: all .5s
+    border-radius: 50px
+    font-size: 18px
+    outline: none
+
+    &:hover
+      background: #dd4b2b
+      color: #fff
+
+main
+  background: url("../../dist/img/bg.png") no-repeat
+  background-size: cover
+  overflow: auto
+
+  h1
+    text-align: center
+    color: #fff
+    font-size: 72px
+    font-weight: 300
+    padding-top: 450px
+    
+  span
+    color: #fff
+    text-align: center
+    font-size: 30px
+    display: block
+
+.box-3
+  display: flex
+  justify-content: center
+  margin-top: 130px
+  margin-bottom: 80px
+  flex-wrap: wrap
+
+.box
+  flex: 30%
+  text-align: center
+  color: #fff
+  margin: 0 15px
+
+.box-title
+  font-size: 30px
+  font-weight: bold
+  margin: 25px 0
+
+.box-text
+  padding: 0 15px
+  font-size: 15px
+  line-height: 1.8
+
+.btn
+  display: block
+  margin: 0 auto 120px
+  background-color: #fff
+  border-radius: 40px
+  border: none
+  width: 210px
+  height: 50px
+  color: #612316
+  font-size: 18px
+  outline: none
+  cursor: pointer
+
+.our-news
+  h2
+    padding: 80px 0
+    text-align: center
+    font-size: 30px
+    font-weight: bold
+    color: #31353e
+
+  .box-3
+    margin: 0 0 100px
+  
+  .box
+    color: #31353e
+
+  .btn
+    width: 180px
+    font-size: 15px
+    margin: 35px auto 0
+
+.newsletter
+  background: url("../../dist/img/bg-bot.png") no-repeat
+  background-size: cover
+  overflow: auto
+
+  h2
+    text-align: center
+    color: #fff
+    font-size: 30px
+    font-weight: bold
+    margin: 90px 0 20px
+
+  span
+    color: #fff
+    text-align: center
+    font-size: 15px
+    display: block
+    line-height: 1.5
+
+  input[type="email"]
+    width: 330px
+    height: 50px
+    padding-left: 30px
+    font-size: 18px
+    border: 0
+    background: rgba(255,255,255, 0.3)
+    color: #fff
+    border-radius: 40px
+    outline: none
+
+  input[type="submit"]
+    width: 200px
+    height: 50px
+    margin-left: -50px
+    background: #fff
+    color: #612316
+    border: 0
+    font-size: 18px
+    border-radius: 40px
+    outline: none
+    cursor: pointer
+
+.div
+  display: flex
+  justify-content: center
+  margin: 40px 0 100px
+
+::-webkit-input-placeholder
+  color: #fff
+  opacity: .7
+::-moz-placeholder
+  color: #fff
+  opacity: .7
+::-moz-placeholder
+  color: #fff
+  opacity: .7
+::-ms-input-placeholder
+  color: #fff
+  opacity: .7
+
+.blocks
+  display: flex
+  justify-content: center
+  margin: 50px auto
+
+.block
+  margin: 0 15px
+  flex: 50%
+
+  .btn
+    display: block
+    margin: 0
+    width: 180px
+    height: 40px
+    color: #fff
+    font-size: 15px
+
+.btn-red
+  background-color: #DD4B2B
+
+.btn-dark
+  background-color: #4B4E73
+
+.block-title
+  font-size: 30px
+  font-weight: bold
+  margin: 10px 0
+
+.block-text
+  font-size: 15px
+  line-height: 1.7
+  text-align: left
+  margin-bottom: 100px
+
+  span
+    display: block
+    margin-top: 20px
+    
+footer
+  background-color: #D75D0E
+
+.foot-content
+  display: flex
+  justify-content: center
+
+
+  .text
+    text-align: center
+    flex: 33%
+    margin: 80px 20px 80px
+
+    li
+      padding: 5px 0
+
+
+@media screen and (max-width: 991px)
+  .box
+    flex: 100%
+    margin: 20px
+
+  .box-text
+    width: 350px
+    margin: 0 auto
+
+  .blocks
+    flex-wrap: wrap
